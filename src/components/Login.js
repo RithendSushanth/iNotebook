@@ -1,7 +1,7 @@
 import React,{useState}from 'react'
 import { useNavigate } from "react-router-dom";
 const Login = (props) => {
-    const host = "https://inotebook-pzrc.onrender.com"
+    const host = process.env.REACT_APP_API_URL;
     const [credentials, setCredentials] = useState({email:"",password:""})
     // do not use useHistory hook as it is now replaced by useNavigate hook
     let navigate = useNavigate();

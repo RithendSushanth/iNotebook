@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 
 const Signup = (props) => {
-  const host = "https://inotebook-pzrc.onrender.com"
+  const host = process.env.REACT_APP_API_URL || "https://inotebook-pzrc.onrender.com";
+
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });
   let navigate = useNavigate();
 
