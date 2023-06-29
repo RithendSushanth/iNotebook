@@ -88,4 +88,3 @@ const Notes = (props) => {
 
 export default Notes
 
-// video 68
