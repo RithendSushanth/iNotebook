@@ -8,7 +8,7 @@ const app = express()
 const port = 5000
 
 
-app.use(cors)
+app.use(cors())
 
 // agar req.body use karna hai toh ye middleware lagana padhega
 app.use(express.json())
